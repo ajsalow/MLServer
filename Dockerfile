@@ -119,6 +119,7 @@ COPY \
     ./hack/activate-env.sh \
     ./hack/
 
+RUN pip install certifi==2023.7.22
 USER 1000
 
 # We need to build and activate the "hot-loaded" environment before MLServer
